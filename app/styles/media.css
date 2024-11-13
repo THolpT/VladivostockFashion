@@ -1,0 +1,108 @@
+@media screen and (max-width: 640px) {
+    .center-header {
+        display: none;
+    }
+
+    .right-header {
+        display: none;
+    }
+
+    .menu-catalog {
+        display: none;
+    }
+
+    .left-header {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container {
+        width: 100vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .first-block img {
+        display: none;
+    }
+
+    .main-content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-descr {
+        display: none;
+    }
+
+    input, select {
+        margin-bottom: 10px;
+    }
+
+    .third-block {
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-line {
+        height: 3px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .third-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .third-title-block {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .center-header {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    
+      /* Показать иконку бургера */
+      .burger-icon {
+        display: flex;
+      }
+    
+      /* Стили для открытого состояния меню */
+      .center-header.open {
+        display: flex;
+      }
+    
+      /* Стиль для пунктов меню */
+      .center-header ul {
+        flex-direction: column;
+        padding: 0;
+      }
+    
+      .menu-hotbar {
+        margin: 15px 0;
+      }
+  }
+
+  .active-media {
+    width: 100vw;
+    height: 100vh;
+  }
