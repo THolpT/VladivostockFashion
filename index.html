@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Одежда Владивостока</title>
+  <link rel="stylesheet" href="styles/styles.config.css">
+  <link rel="stylesheet" href="styles/globals.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container2">
+    <div class="left-header">
+      <img src="content/В.О.svg" alt="" class="header-logo">
+      <div class="burger-icon" onclick="toggleMenu()">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      <p class="menu-catalog">Каталог</p>
+    </div>
+    <div id="center-header" class="center-header">
+      <ul>
+        <li class="menu-hotbar"><a href="#">Заказать</a></li>
+        <li class="menu-hotbar"><a href="#">О нас</a></li>
+        <li class="menu-hotbar"><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="right-header">
+      <img src="content/bascket.png" alt="" class="korzina">
+      <p>(0)</p>
+    </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="home">
+    <!-- First Block -->
+    <div class="first-block container">
+      <div class="main-content">
+        <p class="first-title">Лучшая одежда во Владивостоке</p>
+        <p class="first-descr">Помогаем создать стиль и образ для любого мероприятия</p>
+        <button class="first-button">Подобрать одежду</button>
+      </div>
+      <img src="content/Воспроизведение.png" alt="">
+    </div>
+
+    <!-- Second Block -->
+     <div class="second-bg">
+    <div class="second-block container">
+      <div class="second-title-block">
+        <p>Выберите одежду</p>
+        <div>
+          <img src="content/Arrow 3.png" alt="Previous" onclick="handlePrevClick()">
+          <img src="content/Arrow 4.png" alt="Next" onclick="handleNextClick()">
+        </div>
+      </div>
+      <div class="carousel">
+        <div id="carousel-track" class="carousel-track">
+          <div class="card">
+            <img src="content/image.png" alt="" class="card-img">
+            <div class="card-content">
+              <div class="card-text">
+                <p class="card-title">Футболка синяя</p>
+                <p class="card-descr">1200 ₽</p>
+              </div>
+              <button class="card-button"><img src="content/Arrow 2.png" alt=""></button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="content/image (1).png" alt="" class="card-img">
+            <div class="card-content">
+              <div class="card-text">
+                <p class="card-title">Футболка серая</p>
+                <p class="card-descr">1200 ₽</p>
+              </div>
+              <button class="card-button"><img src="content/Arrow 2.png" alt=""></button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="content/image (2).png" alt="" class="card-img">
+            <div class="card-content">
+              <div class="card-text">
+                <p class="card-title">Футболка красная</p>
+                <p class="card-descr">1200 ₽</p>
+              </div>
+              <button class="card-button"><img src="content/Arrow 2.png" alt=""></button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="content/image.png" alt="" class="card-img">
+            <div class="card-content">
+              <div class="card-text">
+                <p class="card-title">Футболка синяя</p>
+                <p class="card-descr">1200 ₽</p>
+              </div>
+              <button class="card-button"><img src="content/Arrow 2.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="slider">
+        <li class="slider-li active-slider" onclick="setSlide(0)"></li>
+        <li class="slider-li" onclick="setSlide(1)"></li>
+        <li class="slider-li" onclick="setSlide(2)"></li>
+        <li class="slider-li" onclick="setSlide(3)"></li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- Third Block -->
+    <div class="third-block container">
+      <div class="third-title-block">
+        <p class="third-title">Закажите свою одежду</p>
+        <p class="third-descr">Выберите одежду, введите свои контактные данные и наш менеджер подберёт вам гардероб</p>
+      </div>
+      <div class="input-block">
+        <form>
+          <select name="select" id="1" required>
+            <option value="default">Выбрать одежду</option>
+            <option value="1">Футболка синяя</option>
+            <option value="2">Футболка красная</option>
+            <option value="3">Футболка зелёная</option>
+          </select>
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="text" placeholder="Ваш телефон" required>
+          <button class="input-btn">Выбрать одежду</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+   <div class="second-bg">
+  <footer class="container">
+    <img src="content/В.О.svg" alt="" class="logo">
+    <div class="right-footer">
+      <p class="footer-title">Мы на связи с вами</p>
+      <p class="footer-tel">+7 (907) 443 53 23</p>
+    </div>
+  </footer>
+   </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
